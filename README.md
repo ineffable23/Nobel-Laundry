@@ -119,3 +119,7 @@ There will be two types of Users – Admin (the Owner) and Customer.
 
  ## Project Wireframe :
  [Laundry Management Wireframe](https://github.com/ineffable23/Nobel-Laundry/blob/main/Wireframe.drawio.png)
+
+ ## Project Infographics : 
+ [Laundry Management infographics](https://github.com/ineffable23/Nobel-Laundry/blob/main/Laundry-Managemant.pdf)
+ - download the pdf to view this file
