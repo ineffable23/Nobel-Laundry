@@ -1,0 +1,54 @@
+<h2>Add Cloth</h2>
+
+<div>
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            required
+            [(ngModel)]="laundry.username"
+            name="username"
+          />
+        </div>
+        <div class="form-group">
+          <label for="clothType">Cloth Type</label>
+          <input
+            class="form-control"
+            id="clothType"
+            required
+            [(ngModel)]="laundry.clothType"
+            name="clothType"
+          />
+        </div>
+        <div class="form-group">
+          <label for="clothFabric">Cloth Fabric</label>
+          <input
+            class="form-control"
+            id="clothFabric"
+            required
+            [(ngModel)]="laundry.clothFabric"
+            name="clothFabric"
+          />
+        </div>
+        <div class="form-group">
+          <label for="clothColor">Cloth Colour</label>
+          <input
+            class="form-control"
+            id="clothColor"
+            required
+            [(ngModel)]="laundry.clothColor"
+            name="clothColor"
+          />
+        </div>
+        <button (click)="saveLaundry()" class="btn btn-outline-success">Place Order</button>
+      </div>
+      <div *ngIf="submitted">
+        <h4>Order placed successfully!</h4>
+        <button class="btn btn-outline-success" (click)="newLaundry()">Add cloth</button>
+      </div>
+    </div>
+  </div>

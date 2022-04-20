@@ -1,0 +1,83 @@
+<div>
+    <div *ngIf="currentLaundry.id" class="edit-form">
+      <h2>Orders</h2>
+      <form>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            class="form-control"
+            id="username"
+            required
+            [(ngModel)]="currentLaundry.username"
+            name="username"
+          />
+        </div>
+        <div class="form-group">
+          <label for="clothType">Cloth Type</label>
+          <input
+            class="form-control"
+            id="clothType"
+            required
+            [(ngModel)]="currentLaundry.clothType"
+            name="clothType"
+          />
+        </div>
+        <div class="form-group">
+          <label for="clothFabric">Cloth Fabric</label>
+          <input
+            class="form-control"
+            id="clothFabric"
+            required
+            [(ngModel)]="currentLaundry.clothFabric"
+            name="clothFabric"
+          />
+        </div>
+        <div class="form-group">
+          <label for="clothColor">Cloth Colour</label>
+          <input
+            class="form-control"
+            id="clothColor"
+            required
+            [(ngModel)]="currentLaundry.clothColor"
+            name="clothColor"
+          />
+        </div>
+        <div class="form-group">
+          <label><strong>Status:</strong></label>
+          {{ currentLaundry.washed ? "Washing" : "Pending" }}
+        </div>
+      </form>
+      <div class="buttons">
+      <button
+        class="btn btn-outline-primary mr-2 b"
+        *ngIf="currentLaundry.washed"
+        (click)="updateWashed(false)"
+      >
+        Revert
+      </button>
+      <button
+        *ngIf="!currentLaundry.washed"
+        class="btn btn-outline-primary mr-2"
+        (click)="updateWashed(true)"
+      >
+        Wash
+      </button>
+      <button class="btn btn-outline-danger mr-2" (click)="deleteLaundry()">
+        Delete
+      </button>
+      <button
+        type="submit"
+        class="btn btn-outline-success mb-2"
+        (click)="updateLaundry()"
+      >
+        Update
+      </button>
+      <p>{{ message }}</p>
+    </div>
+    </div>
+    <div *ngIf="!currentLaundry.id">
+      <br />
+      <p>Cannot access this Order</p>
+    </div>
+  </div>

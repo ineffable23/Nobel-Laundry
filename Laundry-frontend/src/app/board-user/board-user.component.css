@@ -1,0 +1,22 @@
+h2 {
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+h3 {
+    text-align: center;
+    justify-content: space-around;
+}
+
+#align {
+    justify-content: space-between;
+}
+
+section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

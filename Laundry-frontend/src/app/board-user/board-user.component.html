@@ -1,0 +1,59 @@
+<h2>Welcome to the User Dashboard</h2>
+<br>
+<section>
+    <h3>Order Status</h3>
+    <br>
+    <!-- Stages  -->
+    <div class="d-flex" id="align">
+        <!-- <div class="spinner-grow text-info" role="status">
+        <span class="visually-hidden">Orders placed</span>
+      </div>
+      <div class="spinner-grow text-danger" role="status">
+        <span class="visually-hidden">Gone for washing</span>
+      </div>
+      <div class="spinner-grow text-warning" role="status">
+        <span class="visually-hidden">Drying for ironing</span>
+      </div>
+      <div class="spinner-grow text-success" role="status">
+        <span class="visually-hidden">Ironed and ready for delivery</span>
+      </div> -->
+
+        <span class="badge bg-info text-dark">Orders placed</span>
+        <span class="badge bg-danger">Gone for washing</span>
+        <span class="badge bg-warning text-dark">Drying for ironing</span>
+        <span class="badge bg-success">Ironed and ready for delivery</span>
+    </div>
+    <br>
+    <!-- progress bar -->
+    <div class="progress">
+        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar"
+            [style.width]="progress+'%'" [attr.aria-valuenow]="progress" aria-valuemin="0" aria-valuemax="100"></div>
+        <span style="position: absolute; top: 0.5em;" [ngStyle]="{'left': progress + '%'}"></span>
+    </div>
+    <div class="d-flex justify-content-end">
+        <span class="completed_progress_bar">{{progress}}% completed (<span id="countdown"></span> second to
+            start)</span>
+    </div>
+
+    <!-- track status button -->
+    <button type="button" class="btn btn-outline-dark" (click)="Showprogressbar()">Track status</button>
+</section>
+<section>
+    <!-- add clothes -->
+    <button type="button" class="btn btn-outline-info" routerLink="add">Add Clothes</button>
+</section>
+<section>
+  <button type="button" class="btn btn-outline-warning" id="liveToastBtn">Alert</button>
+
+  <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src=".\assets\images\logo.jpg" class="rounded me-2" alt="logo">
+      <strong class="me-auto">Bootstrap</strong>
+      <small>11 mins ago</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Hello, world! This is a toast message.
+    </div>
+  </div>
+</section>
