@@ -2,12 +2,13 @@
  Full Stack Application Development using MEAN
  
 ### Laundry Management
-<!-- - [Problem statement](https://github.com/ineffable23/Laundry-Management/tree/main/Laundry-Firebase#problem-statement-)
-- [Solution](https://github.com/ineffable23/Laundry-Management/tree/main/Laundry-Firebase#solution-)
-- [Project Presentation](https://github.com/ineffable23/Laundry-Management/tree/main/Laundry-Firebase#project-presentation-)
-- [Project Wireframe](https://github.com/ineffable23/Laundry-Management/tree/main/Laundry-Firebase#project-wireframe-)
-- [Challenges Faced](https://github.com/ineffable23/Laundry-Management/tree/main/Laundry-Firebase#challenges-faced)
-- [Future Scope](https://github.com/ineffable23/Laundry-Management/tree/main/Laundry-Firebase#future-scope) -->
+- [Problem statement](https://github.com/ineffable23/Nobel-Laundry#problem-statement-)
+- [Solution](https://github.com/ineffable23/Nobel-Laundry#solution-)
+- [Project Presentation](https://github.com/ineffable23/Nobel-Laundry#project-presentation-)
+- [Project Wireframe](https://github.com/ineffable23/Nobel-Laundry#project-wireframe-)
+- [Project Infographics](https://github.com/ineffable23/Nobel-Laundry#project-infographics-)
+- [Challenges Faced](https://github.com/ineffable23/Nobel-Laundry#challenges-faced)
+- [Future Scope](https://github.com/ineffable23/Nobel-Laundry#future-scope) 
 
 
 ## Problem Statement :
